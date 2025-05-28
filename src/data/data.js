@@ -118,3 +118,7 @@ export const professionalSkills = [
         desc: "Quick to learn new technologies and adjust to dynamic project requirements."
     },
 ]
+
+export const GITHUB_URL = "https://www.github.com/vanshrajput099"
+export const LINKEDIN_URL = "https://www.linkedin.com/in/vansh-raajput/"
+export const MAIL_URL = "mailto:vanshkumar@gmail.com"

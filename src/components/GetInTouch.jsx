@@ -117,13 +117,13 @@ const GetInTouch = () => {
                             <div className='mt-2'>
                                 <h1 className='text-2xl lg:text-3xl font-bold'>Follow Us</h1>
                                 <div className='flex gap-4 mt-1'>
-                                    <Link href={'/'} className='p-1 bg-gray-500 rounded-lg'>
+                                    <Link href={'/'} className='p-1 bg-gray-500 rounded-lg' onClick={() => { window.open(GITHUB_URL, '_blank') }}>
                                         <Github />
                                     </Link>
-                                    <Link href={'/'} className='p-1 bg-blue-400 rounded-lg'>
+                                    <Link href={'/'} className='p-1 bg-blue-400 rounded-lg' onClick={() => { window.open(GITHUB_URL, '_blank') }}>
                                         <Linkedin />
                                     </Link>
-                                    <Link href={'/'} className='p-1 rounded-lg' style={{ backgroundColor: 'crimson' }}>
+                                    <Link href={'/'} className='p-1 rounded-lg' style={{ backgroundColor: 'crimson' }} onClick={() => { window.location.href = MAIL_URL }}>
                                         <Mail />
                                     </Link>
                                 </div>

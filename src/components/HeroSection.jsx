@@ -6,6 +6,7 @@ import hero from "@/assets/hero.jpeg"
 import { Github, Linkedin, Mail } from 'lucide-react';
 import Link from 'next/link';
 import { useInView } from 'react-intersection-observer';
+import { GITHUB_URL, MAIL_URL } from '@/data/data';
 
 const HeroSection = () => {
 
@@ -42,17 +43,19 @@ const HeroSection = () => {
                         applications. Proficient in full-stack development with expertise in JavaScript and databases. Keen to apply
                         technical skills in a fast-paced, innovative environment.</p>
                     <div className={`flex gap-5 mx-auto lg:mt-3 transition-all delay-900 duration-700 ease-out transform ${nameView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
-                        <Button className={'bg-blue-400'}>View Projects</Button>
+                        <Link href={"#projects"}>
+                            <Button className={'bg-blue-400 hover:cursor-pointer'}>View Projects</Button>
+                        </Link>
                         <Button onClick={handleResume} variant={'outline'} className={'bg-black'}>Resume</Button>
                     </div>
                     <div className={`flex gap-2 mx-auto transition-all delay-900 duration-700 ease-out transform ${nameView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
-                        <Link href={'/'}>
+                        <Link href={"/"} onClick={() => { window.open(GITHUB_URL, '_blank') }}>
                             <Github />
                         </Link>
-                        <Link href={'/'}>
+                        <Link href={"/"} onClick={() => { window.open(GITHUB_URL, '_blank') }}>
                             <Linkedin />
                         </Link>
-                        <Link href={'/'}>
+                        <Link href={'/'} onClick={() => { window.location.href = MAIL_URL }}>
                             <Mail />
                         </Link>
                     </div>
