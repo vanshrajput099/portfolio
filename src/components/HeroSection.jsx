@@ -26,7 +26,7 @@ const HeroSection = () => {
     });
 
     const handleResume = () => {
-        window.open('https://drive.google.com/file/d/14D2LohT7XRXLuBWsO0ni5GRWLg4jeKbE/view?usp=sharing', '_blank');
+        window.open('https://drive.google.com/file/d/1guDfpSyCoBtTH7tkbKQsWvKKgjjeF7Xm/view?usp=sharing', '_blank');
     }
 
     return (
