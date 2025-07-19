@@ -26,7 +26,7 @@ const HeroSection = () => {
     });
 
     const handleResume = () => {
-        window.open('https://drive.google.com/file/d/1guDfpSyCoBtTH7tkbKQsWvKKgjjeF7Xm/view?usp=sharing', '_blank');
+        window.open('https://drive.google.com/file/d/1bvty52OvKAfztdD-iu95D-eAVTWTZHXS/view?usp=sharing', '_blank');
     }
 
     return (
@@ -52,7 +52,7 @@ const HeroSection = () => {
                         <Link href={"/"} onClick={() => { window.open(GITHUB_URL, '_blank') }}>
                             <Github />
                         </Link>
-                        <Link href={"/"} onClick={() => { window.open(GITHUB_URL, '_blank') }}>
+                        <Link href={"/"} onClick={() => { window.open("https://www.linkedin.com/in/vansh-rajput-a18520259/", '_blank') }}>
                             <Linkedin />
                         </Link>
                         <Link href={'/'} onClick={() => { window.location.href = MAIL_URL }}>
